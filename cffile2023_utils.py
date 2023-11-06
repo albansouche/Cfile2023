@@ -60,7 +60,7 @@ class EBITDA:
         # map on locations
         self.map_loc = map_loc
         # read file
-        self.tbl_all = crp.read_encrypted(path='file', password=pwd)
+        self.tbl_all = crp.read_encrypted(path='Ffile2023/file', password=pwd)
         # change column names
         self.tbl_all = self.tbl_all.rename( columns={"a": "element", "b": "concentration [wt]", "c": "value [USD/m2]", "d": "value [USD/Ton]",  "e": "location"} )
         # Update elements
